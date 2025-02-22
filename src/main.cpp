@@ -27,11 +27,15 @@ void loop() {
     // --- Print to Serial ---
     Serial.print("Humidity: ");
     Serial.print(humidity, 1);
-    Serial.print("% | DHT11 Temp: ");
+    Serial.print("% | DHT11 Temp F: ");
     Serial.print(dhtTempF, 1);
-    Serial.print("F | Thermistor Temp: ");
+    Serial.print("F | DHT11 Temp C: ");
+    Serial.print(dhtTempC, 1);
+    Serial.print("C | Thermistor Temp F: ");
     Serial.print(thermF, 1);
-    Serial.print("F | Soil Moisture: ");
+    Serial.print("F | Thermistor Temp C: ");
+    Serial.print(thermC, 1);
+    Serial.print("C | Soil Moisture: ");
     Serial.print(soilMoistPercent);
     Serial.print("% | Lux: ");
     Serial.println(luxVal);

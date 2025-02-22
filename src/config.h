@@ -50,7 +50,7 @@ constexpr int WET_VALUE = 239;
 // ------------------
 // Timings
 // ------------------
-constexpr int DELAY_TIME = 30000;
+constexpr int DELAY_TIME = 5000;
 constexpr int SETUP_TIME = 5000;
 
 #endif

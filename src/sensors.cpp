@@ -24,7 +24,7 @@ static float readingToResistance(int reading) {
     const float vOut = reading * (5.0 / 1023.0);
 
     // Voltage divider formula:
-    // Vout = (R_FIXED / (R_LDR + R_FIXED)) * 5V
+    // vOut = (R_FIXED / (R_LDR + R_FIXED)) * 5V
     // => R_LDR = R_FIXED * (5 / vOut - 1)
     const float rLDR = R_FIXED * (5.0 / vOut - 1.0);
     return rLDR;
